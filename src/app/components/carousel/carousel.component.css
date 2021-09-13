@@ -1,0 +1,28 @@
+.blink {
+    animation: blink 5s ;
+  }
+  
+  @keyframes blink {
+    100% {
+      opacity: 1;
+    }
+    50% {
+        opacity: 1;
+      }
+    0% {
+      opacity: 0;
+      color: blue;
+    }
+  }
+ 
+
+  .blinkposition{
+    position: absolute;
+    left: 1000px;
+    top: 200px;  
+  }
+
+  
+ 
+
+ 

@@ -1,0 +1,35 @@
+.searchposition{
+    position: relative;
+    left: 200px;
+    top: 280px;
+}
+
+.nedersin{
+    position: relative;
+    left: -170px;
+    top: -350px;
+}
+
+.butonposition{
+    position: absolute;
+    left: 0px;
+    top: 170px;
+}
+
+.block {
+
+    display: block;
+    width: 100%;
+    border: none;
+    background-color: #15bfc5;
+    padding: 12px 28px;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+    border-radius: 12px;
+
+    position: relative;
+    left: -3px;
+    top: 8px;
+
+  }
