@@ -1,32 +1,25 @@
-<app-navbar></app-navbar>
 
-<app-carousel></app-carousel> 
+  
+  <app-navbar></app-navbar>
 
-<app-search></app-search> 
-
-<app-comments></app-comments> 
-
-
-
-<div class="container">
-
-  <div class="col-md-5">
-    
+  <main class="flex-fill">
+    <router-outlet></router-outlet>
+  </main>     
+  
+  <div class="footer">
+    <footer>
+      <app-footer></app-footer>
+    </footer>
   </div>
- 
- <!-- 
-<div class="row">
-    <div class="col-md-3"> 
-      <app-brand></app-brand>
-    </div>
-    <div class="col-md-9">
-      <app-car></app-car>  
-    </div>        
-  </div> 
- 
-  <app-carousel></app-carousel> 
-  <app-carousel1></app-carousel1> 
- -->   
- 
-  <router-outlet></router-outlet>
-</div>
+  
+  
+
+
+
+
+
+
+
+
+
+
