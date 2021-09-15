@@ -1,0 +1,22 @@
+<div class="container">
+    <div class="row">
+        <div class="colorlistposition">
+            <div class="col-md-14">              
+                <select class="form-select shadow p-3 mb-5 bg-body rounded" multiple aria-label="multiple select example">
+                    <option selected>Color Name Filter:</option>
+                    
+                    <option value="1" [class]="getAllColorClass()" routerLink="/cars">All Colors</option> 
+                    <option value="2" 
+                        (click)="setCurrentColor(color)" 
+                        routerLink="/car/color/{{color.colorId}}"
+                        *ngFor="let color of colors" 
+                        [class]="getCurrentColorClass(color)" 
+                    >   {{ color.colorName }}  </option> 
+                            
+                    
+                </select>                       
+        </div>
+    </div>
+  
+  </div>
+  

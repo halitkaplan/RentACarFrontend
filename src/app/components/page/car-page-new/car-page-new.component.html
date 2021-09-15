@@ -1,0 +1,22 @@
+<div class="container">
+    <div class="row">
+        <div class="brandlistposition">
+            <div class="col-md-2">              
+                <select class="form-select" multiple aria-label="multiple select example">
+                    <option selected>Open this select menu</option>
+                    
+                    <option value="1" class="getAllCars" routerLink="/car">Tüm Araçlar</option>
+                    <option value="2" 
+                        (click)="setCurrentBrand(brand)" 
+                        routerLink="/car/brand/{{brand.brandId}}"
+                        *ngFor="let brand of brands" 
+                        [class]="getCurrentBrandClass(brand)" 
+                    >{{ brand.brandName }}  </option>                  
+                    
+                </select>                       
+        </div>
+    </div>
+
+</div>
+
+<app-car></app-car>

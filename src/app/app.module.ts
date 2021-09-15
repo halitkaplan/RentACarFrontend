@@ -19,6 +19,9 @@ import { AppRoutingModule } from './app-routing.module';
 import { HomepageComponent } from './components/page/homepage/homepage.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { BrandListComponent } from './components/brand-list/brand-list.component';
+import { CarPageNewComponent } from './components/page/car-page-new/car-page-new.component';
+import { ColorListComponent } from './components/color-list/color-list.component';
+import { ColorComponent } from './components/color/color.component';
 
 const appRoutes: Routes=[
   {path: 'cars', component:CarComponent},
@@ -30,7 +33,7 @@ const appRoutes: Routes=[
     AppComponent,
     CarComponent,
     BrandComponent,    
-    NavbarComponent, CarouselComponent, ModalComponent, SearchComponent, CommentsComponent, CardComponent, CarPageComponent, HomepageComponent, FooterComponent, BrandListComponent
+    NavbarComponent, CarouselComponent, ModalComponent, SearchComponent, CommentsComponent, CardComponent, CarPageComponent, HomepageComponent, FooterComponent, BrandListComponent, CarPageNewComponent, ColorListComponent, ColorComponent
   ],
   imports: [
     BrowserModule,

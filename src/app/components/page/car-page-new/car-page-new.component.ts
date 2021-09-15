@@ -1,16 +1,17 @@
+
 import { Component, OnInit } from '@angular/core';
 import { Brand } from "src/app/models/brand";
 import { BrandService } from "src/app/services/brand.service";
 
 @Component({
-  selector: 'app-brand-list',
-  templateUrl: './brand-list.component.html',
-  styleUrls: ['./brand-list.component.css']
+  selector: 'app-car-page-new',
+  templateUrl: './car-page-new.component.html',
+  styleUrls: ['./car-page-new.component.css']
 })
-export class BrandListComponent implements OnInit {
-
+export class CarPageNewComponent implements OnInit {
   brands:Brand[]=[];
   currentBrand : Brand;
+  
 
   constructor(private brandService:BrandService) { }
 
@@ -50,5 +51,8 @@ export class BrandListComponent implements OnInit {
     getAllCars(){
       this.getAllCars();
     }
+  
+
+ 
 
 }

@@ -1,24 +1,22 @@
-<div class="brandlistposition">
-    <div class="list-group">
-        <label class="list-group-item">
-          <input class="form-check-input me-1" type="checkbox" value="">
-          Ford
-        </label>
-        <label class="list-group-item">
-          <input class="form-check-input me-1" type="checkbox" value="">
-          Nissan
-        </label>
-        <label class="list-group-item">
-          <input class="form-check-input me-1" type="checkbox" value="">
-          BMW
-        </label>
-        <label class="list-group-item">
-          <input class="form-check-input me-1" type="checkbox" value="">
-          Fiat
-        </label>
-        <label class="list-group-item">
-          <input class="form-check-input me-1" type="checkbox" value="">
-          Mazda
-        </label>
+<div class="container">
+  <div class="row">
+      <div class="brandlistposition">
+          <div class="col-md-14">              
+              <select class="form-select shadow p-3 mb-5 bg-body rounded" multiple aria-label="multiple select example">
+                  <option selected>Brand Name Filter:</option>
+                  
+                  <option value="1" [class]="getAllBrandClass()" routerLink="/cars">All Cars</option>
+                  <option value="2" 
+                      (click)="setCurrentBrand(brand)" 
+                      routerLink="/car/brand/{{brand.brandId}}"
+                      *ngFor="let brand of brands" 
+                      [class]="getCurrentBrandClass(brand)" 
+                  >{{ brand.brandName }}  </option>                  
+                  
+              </select>                       
       </div>
+  </div>
+
 </div>
+
+
